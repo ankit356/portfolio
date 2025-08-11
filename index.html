@@ -22,7 +22,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
       body {
@@ -88,7 +88,7 @@
       }
 
       .nav-links a::after {
-        content: "";
+        content: '';
         position: absolute;
         width: 0;
         height: 2px;
@@ -240,7 +240,7 @@
       }
 
       .section-title::after {
-        content: "";
+        content: '';
         position: absolute;
         width: 80px;
         height: 4px;
@@ -723,7 +723,7 @@
             </div>
             <div class="social-links delay-3">
               <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"
+              <a href="https://www.linkedin.com/in/ankit-raj-1233581a1/" class="social-link"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
               <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -748,10 +748,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <div class="about-image fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-              alt="Profile photo"
-            />
+            <img src="pic.jpg" alt="Profile photo" />
           </div>
           <div class="about-text delay-1">
             <h3>Full Stack Developer with 3+ Years of Experience</h3>
@@ -899,6 +896,85 @@
               </div>
             </div>
           </div>
+
+          <!-- New Project Card -->
+          <div class="project-card delay-5">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                alt="Srankbazar Business Listing"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Srankbazar - Business Listing Platform
+              </h3>
+              <p class="project-description">
+                Srankbazar is a business listing platform similar to Justdial,
+                where both vendors and admins can list businesses. Vendors can
+                create and manage their own business profiles, while the admin
+                can manage all listings, categories, and advertisements. The
+                system also supports banner ads, which businesses can purchase
+                using the integrated Razorpay payment gateway to promote their
+                services.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Razorpay</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SrankYatra Project Card -->
+          <div class="project-card delay-6">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                alt="SrankYatra Tours and Travel Platform"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                SrankYatra - Tours & Travel Management Platform
+              </h3>
+              <p class="project-description">
+                SrankYatra is a comprehensive tours and travel platform where
+                vendors can manage a variety of services including hotels,
+                tours, events, spaces, boats, and car rentals. Users can browse
+                and book these services seamlessly. The admin panel gives
+                complete control over vendor management, listings, and bookings.
+                The system is designed to handle real-time availability,
+                bookings, and payment processing, ensuring smooth travel
+                planning for customers.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Payment Gateway</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1014,7 +1090,7 @@
             <a href="#" class="footer-social-link"
               ><i class="fab fa-github"></i
             ></a>
-            <a href="#" class="footer-social-link"
+            <a href="https://www.linkedin.com/in/ankit-raj-1233581a1/" class="footer-social-link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
             <a href="#" class="footer-social-link"
@@ -1032,40 +1108,40 @@
     <!-- JavaScript -->
     <script>
       // Mobile menu toggle
-      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-      const navLinks = document.querySelector(".nav-links");
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
 
-      mobileMenuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
           ? '<i class="fas fa-times"></i>'
           : '<i class="fas fa-bars"></i>';
       });
 
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
+        anchor.addEventListener('click', function (e) {
           e.preventDefault();
 
           // Close mobile menu if open
-          if (navLinks.classList.contains("active")) {
-            navLinks.classList.remove("active");
+          if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
             mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
           }
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
           });
         });
       });
 
       // Header scroll effect
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
         if (window.scrollY > 50) {
-          header.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.1)";
+          header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
         } else {
-          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+          header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
         }
       });
 
@@ -1094,7 +1170,7 @@
 
       // Intersection Observer for animations
       const fadeElements = document.querySelectorAll(
-        ".fade-in, .delay-1, .delay-2, .delay-3, .delay-4"
+        '.fade-in, .delay-1, .delay-2, .delay-3, .delay-4'
       );
 
       const observer = new IntersectionObserver(
@@ -1102,7 +1178,7 @@
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.style.opacity = 1;
-              entry.target.style.transform = "translateY(0)";
+              entry.target.style.transform = 'translateY(0)';
             }
           });
         },
