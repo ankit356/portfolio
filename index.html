@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
       body {
@@ -88,7 +88,7 @@
       }
 
       .nav-links a::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 0;
         height: 2px;
@@ -240,7 +240,7 @@
       }
 
       .section-title::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 80px;
         height: 4px;
@@ -356,7 +356,6 @@
       .project-description {
         color: var(--gray-color);
         margin-bottom: 1rem;
-        font-size: 0.95rem;
       }
 
       .project-tech {
@@ -723,7 +722,9 @@
             </div>
             <div class="social-links delay-3">
               <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/ankit-raj-1233581a1/" class="social-link"
+              <a
+                href="https://www.linkedin.com/in/ankit-raj-1233581a1/"
+                class="social-link"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
               <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -774,7 +775,8 @@
                 <span class="skill-tag">Laravel</span>
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">Django</span>
-                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
                 <span class="skill-tag">MongoDB</span>
                 <span class="skill-tag">AWS</span>
                 <span class="skill-tag">Git</span>
@@ -795,8 +797,8 @@
           <div class="project-card fade-in">
             <div class="project-image">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                alt="Project 1"
+                src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1470&q=80"
+                alt="Hospital ward patient care"
               />
             </div>
             <div class="project-content">
@@ -840,9 +842,16 @@
                 A robust HRMS and payroll platform designed to manage multiple
                 companies and their branch-level employees. The system handles
                 employee onboarding, attendance, salary structure, monthly
-                payroll generation, and full & final settlements. It also
-                ensures statutory compliance including PF, ESI, PT, TDS, and
-                Gratuity with downloadable payslips and statutory reports.
+                payroll generation, and full & final settlements. Payroll
+                calculations are fully compliant with government norms,
+                supporting both old and new tax regimes. TDS is calculated based
+                on employee declarations and investment details, ensuring
+                accurate tax deductions. The system also includes a loan
+                management module for handling employee advances and repayments.
+                It ensures statutory compliance including PF, ESI, PT, TDS, and
+                Gratuity, with downloadable payslips and statutory reports.
+                After payroll finalization, invoices are generated in multiple
+                client-specific formats and shared as per business requirements.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Laravel</span>
@@ -851,7 +860,11 @@
                 <span class="tech-tag">Bootstrap</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a
+                  href="https://hrs.stmpl.co.in/"
+                  target="_blank"
+                  class="project-link"
+                >
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
                 <a href="#" class="project-link">
@@ -901,8 +914,8 @@
           <div class="project-card delay-5">
             <div class="project-image">
               <img
-                src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                alt="Srankbazar Business Listing"
+                src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1470&q=80"
+                alt="Small business owner"
               />
             </div>
             <div class="project-content">
@@ -926,7 +939,11 @@
                 <span class="tech-tag">Bootstrap</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a
+                  href="https://srankbazaar.com/"
+                  target="_blank"
+                  class="project-link"
+                >
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
                 <a href="#" class="project-link">
@@ -966,7 +983,60 @@
                 <span class="tech-tag">Payment Gateway</span>
               </div>
               <div class="project-links">
+                <a
+                  href="https://www.srankyatra.com/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
                 <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card delay-7">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1470&q=80"
+                alt="Shri Hanuman Balaji Charitable Diagnostic Centre"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Shri Hanuman Balaji Charitable Diagnostic Centre Software
+              </h3>
+              <p class="project-description">
+                A comprehensive diagnostic centre management system developed
+                for Shri Hanuman Balaji Charitable Diagnostic Centre. The
+                software streamlines patient registration and supports both OPD
+                and IPD workflows. Patients can be admitted into different
+                categories such as Daycare (1-day), General, Special, VIP, and
+                VVIP wards with structured management for up to 7-day
+                treatments. The system includes automatic doctor assignment
+                based on designation, with the flexibility to manually update
+                doctors when required. It maintains detailed daily treatment
+                records including diet plans and therapies provided to patients.
+                Additional features include discharge management with prescribed
+                medicines, integrated medicine stock management, and a complete
+                reporting module covering Employee, OPD, IPD, Leave, and medical
+                records. The platform also includes robust user and role
+                management to ensure secure and efficient operations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://app.shbcenter.in/"
+                  target="_blank"
+                  class="project-link"
+                >
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
                 <a href="#" class="project-link">
@@ -1087,16 +1157,20 @@
             <a href="#contact">Contact</a>
           </div>
           <div class="footer-social">
-            <a href="#" class="footer-social-link"
+            <a href="https://github.com/ankit356" class="footer-social-link"
               ><i class="fab fa-github"></i
             ></a>
-            <a href="https://www.linkedin.com/in/ankit-raj-1233581a1/" class="footer-social-link"
+            <a
+              href="https://www.linkedin.com/in/ankit-raj-1233581a1/"
+              class="footer-social-link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
             <a href="#" class="footer-social-link"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a href="#" class="footer-social-link"
+            <a
+              href="https://www.instagram.com/_ankit_srivastava/"
+              class="footer-social-link"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -1108,40 +1182,40 @@
     <!-- JavaScript -->
     <script>
       // Mobile menu toggle
-      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-      const navLinks = document.querySelector('.nav-links');
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navLinks = document.querySelector(".nav-links");
 
-      mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
+      mobileMenuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
           ? '<i class="fas fa-times"></i>'
           : '<i class="fas fa-bars"></i>';
       });
 
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener("click", function (e) {
           e.preventDefault();
 
           // Close mobile menu if open
-          if (navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
+          if (navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
             mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
           }
 
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
           });
         });
       });
 
       // Header scroll effect
-      window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
         if (window.scrollY > 50) {
-          header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+          header.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.1)";
         } else {
-          header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
         }
       });
 
@@ -1170,7 +1244,7 @@
 
       // Intersection Observer for animations
       const fadeElements = document.querySelectorAll(
-        '.fade-in, .delay-1, .delay-2, .delay-3, .delay-4'
+        ".fade-in, .delay-1, .delay-2, .delay-3, .delay-4",
       );
 
       const observer = new IntersectionObserver(
@@ -1178,11 +1252,11 @@
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.style.opacity = 1;
-              entry.target.style.transform = 'translateY(0)';
+              entry.target.style.transform = "translateY(0)";
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       fadeElements.forEach((element) => {
